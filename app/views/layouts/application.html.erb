@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Resume</title>
+    <title>Sammy Glickman Resume</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-    <%= yield %>
+
+  <!DOCTYPE html>
+  <html>
+  <title>Samuel Glickman</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  </style>
+  <body class="w3-light-grey">
+
+<%=yield%>
+
+  <footer id="footer" class="w3-container w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <a href="https://github.com/sglickman17"><i class="fa fa-github w3-hover-text-light-blue w3-large"></i></a>
+    <a href="https://www.linkedin.com/in/samuel-glickman/"><i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i></a>
+
+  </footer>
+
   </body>
-</html>
+  </html>
